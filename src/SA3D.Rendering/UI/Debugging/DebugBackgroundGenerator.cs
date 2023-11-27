@@ -26,30 +26,30 @@ namespace SA3D.Rendering.UI.Debugging
 		static DebugBackgroundGenerator()
 		{
 			_backgroundGradient = new ColorStop[] {
-				new ColorStop(0, new Rgb24(0, 180, 183)),
-				new ColorStop(0.25f, new Rgb24(0, 138, 143)),
-				new ColorStop(0.5f, new Rgb24(0, 111, 116)),
-				new ColorStop(0.75f, new Rgb24(0, 88, 99)),
-				new ColorStop(1, new Rgb24(0, 72, 87))
+				new(0, new Rgb24(0, 180, 183)),
+				new(0.25f, new Rgb24(0, 138, 143)),
+				new(0.5f, new Rgb24(0, 111, 116)),
+				new(0.75f, new Rgb24(0, 88, 99)),
+				new(1, new Rgb24(0, 72, 87))
 			};
 
 			_borderGradient = new ColorStop[] {
-				new ColorStop(0, new Rgb24(0, 0, 0)),
-				new ColorStop(1, new Rgb24(0, 56, 57))
+				new(0, new Rgb24(0, 0, 0)),
+				new(1, new Rgb24(0, 56, 57))
 			};
 
 			_frameGradient = new ColorStop[] {
-				new ColorStop(0, new Rgb24(8, 214, 241)),
-				new ColorStop(0.18f, new Rgb24(7, 215, 249)),
-				new ColorStop(0.35f, new Rgb24(0, 241, 232)),
-				new ColorStop(0.8f, new Rgb24(0, 43, 46)),
-				new ColorStop(1, new Rgb24(0, 46, 55))
+				new(0, new Rgb24(8, 214, 241)),
+				new(0.18f, new Rgb24(7, 215, 249)),
+				new(0.35f, new Rgb24(0, 241, 232)),
+				new(0.8f, new Rgb24(0, 43, 46)),
+				new(1, new Rgb24(0, 46, 55))
 			};
 
 			_lineGradient = new ColorStop[] {
-				new ColorStop(0, new Rgb24(16, 214, 238)),
-				new ColorStop(0.5f, new Rgb24(32, 145, 150)),
-				new ColorStop(1, new Rgb24(32, 99, 114))
+				new(0, new Rgb24(16, 214, 238)),
+				new(0.5f, new Rgb24(32, 145, 150)),
+				new(1, new Rgb24(32, 99, 114))
 			};
 
 			_lineStart = new Rgba32(16, 214, 238, 128);
