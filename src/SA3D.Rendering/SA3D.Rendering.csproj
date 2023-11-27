@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../SA3D.ProjectConfigurations/NuGet.Build.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>SA3D.Rendering</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>SA3D Rendering library</Title>
+		<Product>SA3D Rendering library</Product>
+		<Description>OpenGL rendering library for SA3D libraries</Description>
+		<Version>1.0.0</Version>
+		<RepositoryUrl>https://github.com/X-Hax/SA3D.Rendering</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/X-Hax/SA3D.Rendering</PackageProjectUrl>
+		<PackageId>SA3D.Rendering</PackageId>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Shaders\Fragment\**">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Shaders\Include\**">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Shaders\Vertex\**">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="UI\Debugging\CascadiaCode.ttf">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FontStashSharp" Version="1.3.3" />
+		<PackageReference Include="OpenTK" Version="4.8.1" />
+		<PackageReference Include="SixLabors.ImageSharp" Version="3.0.2" />
+		<PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.0.1" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+		<PackageReference Include="SA3D.Common" Version="1.4.3" />
+		<PackageReference Include="SA3D.Texturing" Version="1.3.5" />
+		<PackageReference Include="SA3D.Modeling" Version="1.0.7" />
+	</ItemGroup>
+</Project>

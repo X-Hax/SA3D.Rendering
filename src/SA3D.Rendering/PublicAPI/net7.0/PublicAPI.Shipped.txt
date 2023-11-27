@@ -1,0 +1,652 @@
+﻿#nullable enable
+abstract SA3D.Rendering.UI.Canvas.Render(SA3D.Rendering.RenderContext! context) -> void
+const SA3D.Rendering.Buffer.OITBuffer.Node.FragmentListNull = 4294967295 -> uint
+override SA3D.Rendering.Buffer.OITBuffer.Node.ToString() -> string!
+override SA3D.Rendering.RenderWindow.OnFocusedChanged(OpenTK.Windowing.Common.FocusedChangedEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnKeyDown(OpenTK.Windowing.Common.KeyboardKeyEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnKeyUp(OpenTK.Windowing.Common.KeyboardKeyEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnLoad() -> void
+override SA3D.Rendering.RenderWindow.OnMouseDown(OpenTK.Windowing.Common.MouseButtonEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnMouseLeave() -> void
+override SA3D.Rendering.RenderWindow.OnMouseMove(OpenTK.Windowing.Common.MouseMoveEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnMouseUp(OpenTK.Windowing.Common.MouseButtonEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnMouseWheel(OpenTK.Windowing.Common.MouseWheelEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnRenderFrame(OpenTK.Windowing.Common.FrameEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnResize(OpenTK.Windowing.Common.ResizeEventArgs e) -> void
+override SA3D.Rendering.RenderWindow.OnUpdateFrame(OpenTK.Windowing.Common.FrameEventArgs e) -> void
+override SA3D.Rendering.Structs.RenderSettings.Equals(object? obj) -> bool
+override SA3D.Rendering.Structs.RenderSettings.GetHashCode() -> int
+override SA3D.Rendering.UI.Debugging.DebugOverlay.Render(SA3D.Rendering.RenderContext! context) -> void
+SA3D.Rendering.Buffer.OITBuffer
+SA3D.Rendering.Buffer.OITBuffer.BindComposite(SA3D.Rendering.Shaders.Shader! shader) -> void
+SA3D.Rendering.Buffer.OITBuffer.CompositeBlit() -> void
+SA3D.Rendering.Buffer.OITBuffer.CPUComposite() -> SA3D.Texturing.Texture!
+SA3D.Rendering.Buffer.OITBuffer.Node
+SA3D.Rendering.Buffer.OITBuffer.Node.Color.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.Buffer.OITBuffer.Node.Color.set -> void
+SA3D.Rendering.Buffer.OITBuffer.Node.Depth.get -> float
+SA3D.Rendering.Buffer.OITBuffer.Node.Depth.set -> void
+SA3D.Rendering.Buffer.OITBuffer.Node.Flags.get -> uint
+SA3D.Rendering.Buffer.OITBuffer.Node.Flags.set -> void
+SA3D.Rendering.Buffer.OITBuffer.Node.Next.get -> uint
+SA3D.Rendering.Buffer.OITBuffer.Node.Next.set -> void
+SA3D.Rendering.Buffer.OITBuffer.Node.Node() -> void
+SA3D.Rendering.Buffer.OITBuffer.OITBuffer() -> void
+SA3D.Rendering.Buffer.OITBuffer.ReadNodeBuffer(bool depthCheck, bool sortDepth) -> SA3D.Rendering.Buffer.OITBuffer.Node[]![,]!
+SA3D.Rendering.Buffer.OITBuffer.Reset() -> void
+SA3D.Rendering.Buffer.OITBuffer.Setup(System.Drawing.Size viewport, float nodeSpace = 0.4) -> void
+SA3D.Rendering.Buffer.OITBuffer.Use() -> void
+SA3D.Rendering.Buffer.TextureFrameBuffer
+SA3D.Rendering.Buffer.TextureFrameBuffer.BindColorTexture() -> void
+SA3D.Rendering.Buffer.TextureFrameBuffer.BindDepthStencilTexture() -> void
+SA3D.Rendering.Buffer.TextureFrameBuffer.BindFrameBuffer() -> void
+SA3D.Rendering.Buffer.TextureFrameBuffer.Generate(System.Drawing.Size resolution) -> void
+SA3D.Rendering.Buffer.TextureFrameBuffer.TextureFrameBuffer(bool textureDepthStencil) -> void
+SA3D.Rendering.Camera
+SA3D.Rendering.Camera.Aspect.get -> float
+SA3D.Rendering.Camera.Aspect.set -> void
+SA3D.Rendering.Camera.Camera(float aspect) -> void
+SA3D.Rendering.Camera.CanRender(SA3D.Modeling.Structs.Bounds bounds) -> bool
+SA3D.Rendering.Camera.CustomWorldMatrix.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Camera.CustomWorldMatrix.set -> void
+SA3D.Rendering.Camera.Distance.get -> float
+SA3D.Rendering.Camera.Distance.set -> void
+SA3D.Rendering.Camera.FarPlane.get -> float
+SA3D.Rendering.Camera.FarPlane.set -> void
+SA3D.Rendering.Camera.FieldOfView.get -> float
+SA3D.Rendering.Camera.FieldOfView.set -> void
+SA3D.Rendering.Camera.Forward.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.GetMPMatrix(System.Numerics.Matrix4x4 world) -> System.Numerics.Matrix4x4
+SA3D.Rendering.Camera.GetMVMatrix(System.Numerics.Matrix4x4 world) -> System.Numerics.Matrix4x4
+SA3D.Rendering.Camera.GetMVPMatrix(System.Numerics.Matrix4x4 world) -> System.Numerics.Matrix4x4
+SA3D.Rendering.Camera.NearPlane.get -> float
+SA3D.Rendering.Camera.NearPlane.set -> void
+SA3D.Rendering.Camera.Orbiting.get -> bool
+SA3D.Rendering.Camera.Orbiting.set -> void
+SA3D.Rendering.Camera.Orthographic.get -> bool
+SA3D.Rendering.Camera.Orthographic.set -> void
+SA3D.Rendering.Camera.Position.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.Position.set -> void
+SA3D.Rendering.Camera.ProjectionMatrix.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Camera.Realposition.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.Right.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.Rotation.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.Rotation.set -> void
+SA3D.Rendering.Camera.Up.get -> System.Numerics.Vector3
+SA3D.Rendering.Camera.ViewMatrix.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Input.BaseController<T>
+SA3D.Rendering.Input.BaseController<T>.BaseController(SA3D.Rendering.Input.InputManager! input, System.Collections.Generic.Dictionary<T, SA3D.Rendering.Input.InputCode>! defaultMapping) -> void
+SA3D.Rendering.Input.BaseController<T>.Input.get -> SA3D.Rendering.Input.InputManager!
+SA3D.Rendering.Input.BaseController<T>.IsDown(T action) -> bool
+SA3D.Rendering.Input.BaseController<T>.IsPressed(T action) -> bool
+SA3D.Rendering.Input.BaseController<T>.IsReleased(T action) -> bool
+SA3D.Rendering.Input.BaseController<T>.SetControl(T action, SA3D.Rendering.Input.InputCode input) -> void
+SA3D.Rendering.Input.BaseController<T>.SetControls(System.Collections.Generic.IDictionary<T, SA3D.Rendering.Input.InputCode>! mapping) -> void
+SA3D.Rendering.Input.CameraController
+SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.AlignForward = 5 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.AlignInvert = 8 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.AlignSide = 6 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.AlignUp = 7 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.DragModifier = 4 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonBackward = 11 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonDown = 15 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonForward = 10 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonLeft = 13 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonRight = 12 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonSpeedup = 16 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.FirstPersonUp = 14 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.NavMode = 2 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.Orbit = 0 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.Perspective = 1 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.ResetCamera = 9 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.Action.ZoomModifier = 3 -> SA3D.Rendering.Input.CameraController.Action
+SA3D.Rendering.Input.CameraController.CamDragSpeed.get -> float
+SA3D.Rendering.Input.CameraController.CamDragSpeed.set -> void
+SA3D.Rendering.Input.CameraController.Camera.get -> SA3D.Rendering.Camera!
+SA3D.Rendering.Input.CameraController.CameraController(SA3D.Rendering.Input.InputManager! input, SA3D.Rendering.Camera! camera) -> void
+SA3D.Rendering.Input.CameraController.CamMouseSensitivity.get -> float
+SA3D.Rendering.Input.CameraController.CamMouseSensitivity.set -> void
+SA3D.Rendering.Input.CameraController.CamMovementModif.get -> float
+SA3D.Rendering.Input.CameraController.CamMovementModif.set -> void
+SA3D.Rendering.Input.CameraController.CamMovementSpeed.get -> float
+SA3D.Rendering.Input.CameraController.CamMovementSpeed.set -> void
+SA3D.Rendering.Input.CameraController.CamOrbitSensitivity.get -> float
+SA3D.Rendering.Input.CameraController.CamOrbitSensitivity.set -> void
+SA3D.Rendering.Input.CameraController.Run(double delta) -> void
+SA3D.Rendering.Input.DebugController
+SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.CircleBackward = 5 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.CircleRenderMode = 3 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.CircleWireframe = 4 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.DebugCamera = 1 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.DebugHelp = 0 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Action.DebugRender = 2 -> SA3D.Rendering.Input.DebugController.Action
+SA3D.Rendering.Input.DebugController.Context.get -> SA3D.Rendering.RenderContext!
+SA3D.Rendering.Input.DebugController.DebugController(SA3D.Rendering.RenderContext! context) -> void
+SA3D.Rendering.Input.DebugController.Overlay.get -> SA3D.Rendering.UI.Debugging.DebugOverlay!
+SA3D.Rendering.Input.DebugController.Run(double delta) -> void
+SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.A = 44 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.AbntC1 = 147 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.AbntC2 = 148 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Add = 85 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Apps = 72 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Attn = 163 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.B = 45 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Back = 2 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserBack = 122 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserFavorites = 127 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserForward = 123 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserHome = 128 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserRefresh = 124 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserSearch = 126 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.BrowserStop = 125 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.C = 46 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Cancel = 1 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Capital = 8 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.CapsLock = 8 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Clear = 5 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.CrSel = 164 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D = 47 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D0 = 34 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D1 = 35 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D2 = 36 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D3 = 37 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D4 = 38 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D5 = 39 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D6 = 40 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D7 = 41 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D8 = 42 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.D9 = 43 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeAlphanumeric = 157 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeCodeInput = 167 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeDbcsChar = 161 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeDetermineString = 169 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeEnterDialogConversionMode = 170 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeEnterImeConfigureMode = 165 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeEnterWordRegisterMode = 164 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeFlushString = 166 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeHiragana = 159 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeKatakana = 158 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeNoCodeInput = 168 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeNoRoman = 163 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeRoman = 162 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DbeSbcsChar = 160 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.DeadCharProcessed = 172 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Decimal = 88 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Delete = 32 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Divide = 89 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Down = 26 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.E = 48 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.End = 21 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Enter = 6 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.EraseEof = 166 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Escape = 13 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Execute = 29 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ExSel = 165 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F = 49 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F1 = 90 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F10 = 99 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F11 = 100 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F12 = 101 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F13 = 102 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F14 = 103 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F15 = 104 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F16 = 105 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F17 = 106 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F18 = 107 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F19 = 108 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F2 = 91 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F20 = 109 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F21 = 110 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F22 = 111 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F23 = 112 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F24 = 113 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F3 = 92 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F4 = 93 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F5 = 94 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F6 = 95 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F7 = 96 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F8 = 97 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.F9 = 98 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.FinalMode = 11 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.G = 50 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.H = 51 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.HangulMode = 9 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.HanjaMode = 12 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Help = 33 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Home = 22 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.I = 52 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ImeAccept = 16 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ImeConvert = 14 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ImeModeChange = 17 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ImeNonConvert = 15 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.ImeProcessed = 155 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Insert = 31 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.J = 53 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.JunjaMode = 10 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.K = 54 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.KanaMode = 9 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.KanjiMode = 12 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.L = 55 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LaunchApplication1 = 138 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LaunchApplication2 = 139 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LaunchMail = 136 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Left = 23 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LeftAlt = 120 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LeftCtrl = 118 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LeftShift = 116 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LineFeed = 4 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.LWin = 70 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.M = 56 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MediaNextTrack = 132 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MediaPlayPause = 135 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MediaPreviousTrack = 133 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MediaStop = 134 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MouseLeft = -1 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MouseMiddle = -2 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MouseRight = -3 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MouseXButton1 = -4 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.MouseXButton2 = -5 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Multiply = 84 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.N = 57 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Next = 20 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NoName = 169 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.None = 0 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumLock = 114 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad0 = 74 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad1 = 75 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad2 = 76 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad3 = 77 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad4 = 78 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad5 = 79 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad6 = 80 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad7 = 81 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad8 = 82 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.NumPad9 = 83 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.O = 58 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem1 = 140 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem102 = 154 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem2 = 145 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem3 = 146 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem4 = 149 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem5 = 150 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem6 = 151 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem7 = 152 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Oem8 = 153 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemAttn = 157 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemAuto = 160 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemBackslash = 154 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemBackTab = 162 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemClear = 171 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemCloseBrackets = 151 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemComma = 142 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemCopy = 159 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemEnlw = 161 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemFinish = 158 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemMinus = 143 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemOpenBrackets = 149 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemPeriod = 144 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemPipe = 150 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemPlus = 141 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemQuestion = 145 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemQuotes = 152 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemSemicolon = 140 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.OemTilde = 146 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.P = 59 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Pa1 = 170 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.PageDown = 20 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.PageUp = 19 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Pause = 7 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Play = 167 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Print = 28 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.PrintScreen = 30 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Prior = 19 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Q = 60 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.R = 61 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Return = 6 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Right = 25 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.RightAlt = 121 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.RightCtrl = 119 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.RightShift = 117 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.RWin = 71 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.S = 62 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Scroll = 115 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Select = 27 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.SelectMedia = 137 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Separator = 86 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Sleep = 73 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Snapshot = 30 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Space = 18 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Subtract = 87 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.System = 156 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.T = 63 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Tab = 3 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.U = 64 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Up = 24 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.V = 65 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.VolumeDown = 130 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.VolumeMute = 129 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.VolumeUp = 131 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.W = 66 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.X = 67 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Y = 68 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Z = 69 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputCode.Zoom = 168 -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.InputManager
+SA3D.Rendering.Input.InputManager.ClearInputs() -> void
+SA3D.Rendering.Input.InputManager.CursorDelta.get -> System.Numerics.Vector2
+SA3D.Rendering.Input.InputManager.CursorPosition.get -> System.Numerics.Vector2
+SA3D.Rendering.Input.InputManager.InputManager() -> void
+SA3D.Rendering.Input.InputManager.IsDown(SA3D.Rendering.Input.InputCode key) -> bool
+SA3D.Rendering.Input.InputManager.IsFocused.get -> bool
+SA3D.Rendering.Input.InputManager.IsPressed(SA3D.Rendering.Input.InputCode key) -> bool
+SA3D.Rendering.Input.InputManager.IsReleased(SA3D.Rendering.Input.InputCode key) -> bool
+SA3D.Rendering.Input.InputManager.LockCursor.get -> bool
+SA3D.Rendering.Input.InputManager.LockCursor.set -> void
+SA3D.Rendering.Input.InputManager.OnSetCursorPosition -> SA3D.Rendering.Input.InputManager.SetCursorPosition?
+SA3D.Rendering.Input.InputManager.OnSetMouselock -> SA3D.Rendering.Input.InputManager.SetMouseLock?
+SA3D.Rendering.Input.InputManager.PlaceCursor(System.Numerics.Vector2 loc) -> void
+SA3D.Rendering.Input.InputManager.ScrollDelta.get -> float
+SA3D.Rendering.Input.InputManager.SetCursorPos(System.Numerics.Vector2? pos, System.Numerics.Vector2? recenter) -> void
+SA3D.Rendering.Input.InputManager.SetCursorPosition
+SA3D.Rendering.Input.InputManager.SetInput(SA3D.Rendering.Input.InputCode key, bool pressed) -> void
+SA3D.Rendering.Input.InputManager.SetMouseLock
+SA3D.Rendering.Input.InputManager.SetScroll(float delta) -> void
+SA3D.Rendering.Input.InputManager.Update(bool focused) -> void
+SA3D.Rendering.Input.InputManager.WasFocused.get -> bool
+SA3D.Rendering.Input.Settings.CameraInputSettings
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignForward.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignForward.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignInvert.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignInvert.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignSide.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignSide.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignUp.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.AlignUp.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.ApplyToController(SA3D.Rendering.Input.CameraController! controller) -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.CameraInputSettings() -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.DragModifier.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.DragModifier.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonBackward.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonBackward.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonDown.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonDown.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonForward.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonForward.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonLeft.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonLeft.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonRight.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonRight.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonSpeedup.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonSpeedup.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonUp.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.FirstPersonUp.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.NavMode.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.NavMode.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.Orbit.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.Orbit.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.Perspective.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.Perspective.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.ResetCamera.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.ResetCamera.set -> void
+SA3D.Rendering.Input.Settings.CameraInputSettings.ZoomModifier.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.CameraInputSettings.ZoomModifier.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings
+SA3D.Rendering.Input.Settings.DebugInputSettings.ApplyToController(SA3D.Rendering.Input.DebugController! controller) -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleBackward.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleBackward.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleRenderMode.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleRenderMode.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleWireframe.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.CircleWireframe.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugCamera.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugCamera.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugHelp.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugHelp.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugInputSettings() -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugRender.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.DebugRender.set -> void
+SA3D.Rendering.Input.Settings.DebugInputSettings.DisplayBounds.get -> SA3D.Rendering.Input.InputCode
+SA3D.Rendering.Input.Settings.DebugInputSettings.DisplayBounds.set -> void
+SA3D.Rendering.Input.Settings.InputCodeAttribute
+SA3D.Rendering.Input.Settings.InputCodeAttribute.Description.get -> string!
+SA3D.Rendering.Input.Settings.InputCodeAttribute.InputCodeAttribute(string! name, string! description) -> void
+SA3D.Rendering.Input.Settings.InputCodeAttribute.Name.get -> string!
+SA3D.Rendering.Input.Settings.InputCodeCategoryAttribute
+SA3D.Rendering.Input.Settings.InputCodeCategoryAttribute.InputCodeCategoryAttribute(string! title) -> void
+SA3D.Rendering.Input.Settings.InputCodeCategoryAttribute.Title.get -> string!
+SA3D.Rendering.RenderContext
+SA3D.Rendering.RenderContext.ActiveTextures.get -> SA3D.Texturing.TextureSet?
+SA3D.Rendering.RenderContext.ActiveTextures.set -> void
+SA3D.Rendering.RenderContext.AddCanvas(SA3D.Rendering.UI.Canvas! canvas) -> void
+SA3D.Rendering.RenderContext.BackgroundColor.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.RenderContext.BackgroundColor.set -> void
+SA3D.Rendering.RenderContext.BillBoardShader.get -> SA3D.Rendering.Shaders.Shader!
+SA3D.Rendering.RenderContext.BufferMeshes(System.Collections.Generic.IEnumerable<SA3D.Modeling.Mesh.Buffer.BufferMesh!>! meshes, bool force = false) -> void
+SA3D.Rendering.RenderContext.Camera.get -> SA3D.Rendering.Camera!
+SA3D.Rendering.RenderContext.ClearLighting() -> void
+SA3D.Rendering.RenderContext.ContextDeltaEvent
+SA3D.Rendering.RenderContext.ContextEvent
+SA3D.Rendering.RenderContext.DebufferMeshes(SA3D.Modeling.Mesh.Buffer.BufferMesh![]! meshes) -> void
+SA3D.Rendering.RenderContext.FloatViewport.get -> System.Numerics.Vector2
+SA3D.Rendering.RenderContext.Initialize() -> void
+SA3D.Rendering.RenderContext.Input.get -> SA3D.Rendering.Input.InputManager!
+SA3D.Rendering.RenderContext.IsRendering.get -> bool
+SA3D.Rendering.RenderContext.Lighting.get -> System.Collections.ObjectModel.ReadOnlyCollection<SA3D.Rendering.Structs.Lighting>!
+SA3D.Rendering.RenderContext.LoadTextureSet(SA3D.Texturing.TextureSet! textures) -> void
+SA3D.Rendering.RenderContext.MeshShader.get -> SA3D.Rendering.Shaders.Shader!
+SA3D.Rendering.RenderContext.OITBuffer.get -> SA3D.Rendering.Buffer.OITBuffer!
+SA3D.Rendering.RenderContext.OnInitialize -> SA3D.Rendering.RenderContext.ContextEvent?
+SA3D.Rendering.RenderContext.OnRender -> SA3D.Rendering.RenderContext.ContextEvent?
+SA3D.Rendering.RenderContext.OnUpdate -> SA3D.Rendering.RenderContext.ContextDeltaEvent?
+SA3D.Rendering.RenderContext.ReloadTextureSet(SA3D.Texturing.TextureSet! textures) -> void
+SA3D.Rendering.RenderContext.ReloadTextureSetTexture(SA3D.Texturing.Texture! texture) -> void
+SA3D.Rendering.RenderContext.ReloadTextureSetTexture(SA3D.Texturing.TextureSet! textures, int index) -> void
+SA3D.Rendering.RenderContext.RemoveCanvas(SA3D.Rendering.UI.Canvas! canvas) -> void
+SA3D.Rendering.RenderContext.Render(int frameBufferHandle = 0) -> void
+SA3D.Rendering.RenderContext.RenderBillBoard(System.Numerics.Vector3 position, System.Numerics.Vector2 scale, SA3D.Modeling.Mesh.Buffer.BufferMaterial material) -> void
+SA3D.Rendering.RenderContext.RenderContext(System.Drawing.Size viewport) -> void
+SA3D.Rendering.RenderContext.RenderMesh(SA3D.Modeling.Mesh.Buffer.BufferMesh! mesh, SA3D.Rendering.Structs.RenderMatrices matrices) -> void
+SA3D.Rendering.RenderContext.RenderMeshes(SA3D.Modeling.Mesh.Buffer.BufferMesh![]! meshes, SA3D.Rendering.Structs.RenderMatrices[]! matrices) -> void
+SA3D.Rendering.RenderContext.RenderModel(SA3D.Modeling.ObjectData.Node! node, SA3D.Modeling.ObjectData.Node? active = null) -> void
+SA3D.Rendering.RenderContext.SetBillBoardShader(SA3D.Rendering.Shaders.Shader? shader) -> void
+SA3D.Rendering.RenderContext.SetLighting(int index, SA3D.Rendering.Structs.Lighting light) -> void
+SA3D.Rendering.RenderContext.SetLighting(SA3D.Rendering.Structs.Lighting[]! lighting) -> void
+SA3D.Rendering.RenderContext.SetMeshShader(SA3D.Rendering.Shaders.Shader? shader) -> void
+SA3D.Rendering.RenderContext.Settings.get -> SA3D.Rendering.Structs.RenderSettings
+SA3D.Rendering.RenderContext.Settings.set -> void
+SA3D.Rendering.RenderContext.UnloadTextureSet(SA3D.Texturing.TextureSet! textures) -> void
+SA3D.Rendering.RenderContext.Update(bool focused, double delta) -> void
+SA3D.Rendering.RenderContext.Viewport.get -> System.Drawing.Size
+SA3D.Rendering.RenderContext.Viewport.set -> void
+SA3D.Rendering.RenderContext.WireFrameMode.get -> SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.RenderContext.WireFrameMode.set -> void
+SA3D.Rendering.RenderWindow
+SA3D.Rendering.RenderWindow.RenderWindow(SA3D.Rendering.RenderContext! context, string! title = "SA3D", OpenTK.Windowing.Common.Input.WindowIcon? icon = null, bool UseVsync = true) -> void
+SA3D.Rendering.Shaders.FragmentShaders
+SA3D.Rendering.Shaders.Shader
+SA3D.Rendering.Shaders.Shader.BindUniformBlock(string! blockname, int blockid, int ubo) -> void
+SA3D.Rendering.Shaders.Shader.Compile() -> void
+SA3D.Rendering.Shaders.Shader.Name.get -> string!
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, bool data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, double data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, float data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, int data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, SA3D.Modeling.Structs.Color data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, System.Numerics.Matrix4x4 data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, System.Numerics.Vector2 data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, System.Numerics.Vector3 data) -> void
+SA3D.Rendering.Shaders.Shader.SetUniform(string! name, System.Numerics.Vector4 data) -> void
+SA3D.Rendering.Shaders.Shader.Shader(string! name, string! vertexShaderSource, string! fragmentShaderSource) -> void
+SA3D.Rendering.Shaders.Shader.Use() -> void
+SA3D.Rendering.Shaders.ShaderException
+SA3D.Rendering.Shaders.ShaderException.Action.get -> string!
+SA3D.Rendering.Shaders.ShaderException.IntegratedGraphics.get -> bool
+SA3D.Rendering.Shaders.ShaderException.Log.get -> string!
+SA3D.Rendering.Shaders.ShaderException.Name.get -> string!
+SA3D.Rendering.Shaders.ShaderException.Type.get -> string!
+SA3D.Rendering.Shaders.ShaderIncludes
+SA3D.Rendering.Shaders.Shaders
+SA3D.Rendering.Shaders.VertexShaders
+SA3D.Rendering.Shaders.VertexShaders.VertexShaders() -> void
+SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Colors = 4 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.CullSide = 9 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Default = 0 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Falloff = 2 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Lighting = 8 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Normals = 3 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Smooth = 1 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Texcoords = 6 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Textures = 7 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.DebugRenderMode.Weights = 5 -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.Structs.Lighting
+SA3D.Rendering.Structs.Lighting.Ambient.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.Structs.Lighting.Ambient.set -> void
+SA3D.Rendering.Structs.Lighting.AmbientIntensity.get -> float
+SA3D.Rendering.Structs.Lighting.AmbientIntensity.set -> void
+SA3D.Rendering.Structs.Lighting.Color.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.Structs.Lighting.Color.set -> void
+SA3D.Rendering.Structs.Lighting.ColorIntensity.get -> float
+SA3D.Rendering.Structs.Lighting.ColorIntensity.set -> void
+SA3D.Rendering.Structs.Lighting.Direction.get -> System.Numerics.Vector3
+SA3D.Rendering.Structs.Lighting.Direction.set -> void
+SA3D.Rendering.Structs.Lighting.Lighting() -> void
+SA3D.Rendering.Structs.Lighting.Lighting(System.Numerics.Vector3 direction, float colorIntensity, SA3D.Modeling.Structs.Color color, float ambientIntensity, SA3D.Modeling.Structs.Color ambient) -> void
+SA3D.Rendering.Structs.RenderMatrices
+SA3D.Rendering.Structs.RenderMatrices.ModelViewProjection.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Structs.RenderMatrices.RenderMatrices() -> void
+SA3D.Rendering.Structs.RenderMatrices.RenderMatrices(System.Numerics.Matrix4x4 worldMtx, System.Numerics.Matrix4x4 mvp) -> void
+SA3D.Rendering.Structs.RenderMatrices.WorldSpace.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Structs.RenderMatrices.WorldSpaceNormal.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.Structs.RenderMesh
+SA3D.Rendering.Structs.RenderMesh.Matrices.get -> SA3D.Rendering.Structs.RenderMatrices
+SA3D.Rendering.Structs.RenderMesh.Meshes.get -> SA3D.Modeling.Mesh.Buffer.BufferMesh![]!
+SA3D.Rendering.Structs.RenderMesh.RenderMesh() -> void
+SA3D.Rendering.Structs.RenderMesh.RenderMesh(SA3D.Modeling.Mesh.Buffer.BufferMesh![]! meshes, SA3D.Rendering.Structs.RenderMatrices matrices, SA3D.Texturing.TextureSet? textures) -> void
+SA3D.Rendering.Structs.RenderMesh.Textures.get -> SA3D.Texturing.TextureSet?
+SA3D.Rendering.Structs.RenderSettings
+SA3D.Rendering.Structs.RenderSettings.DisableBackfaceCulling.get -> bool
+SA3D.Rendering.Structs.RenderSettings.DisableBackfaceCulling.init -> void
+SA3D.Rendering.Structs.RenderSettings.DisableLighting.get -> bool
+SA3D.Rendering.Structs.RenderSettings.DisableLighting.init -> void
+SA3D.Rendering.Structs.RenderSettings.DisableSpecular.get -> bool
+SA3D.Rendering.Structs.RenderSettings.DisableSpecular.init -> void
+SA3D.Rendering.Structs.RenderSettings.DisableSurfaceAmbient.get -> bool
+SA3D.Rendering.Structs.RenderSettings.DisableSurfaceAmbient.init -> void
+SA3D.Rendering.Structs.RenderSettings.RenderSettings() -> void
+SA3D.Rendering.Structs.RenderSettings.RenderSettings(bool disableLighting, bool disableSpecular, bool disableSurfaceAmbient, bool disableCulling, float transparencySubtract) -> void
+SA3D.Rendering.Structs.RenderSettings.RenderSettings(SA3D.Rendering.Structs.RenderSettings template) -> void
+SA3D.Rendering.Structs.RenderSettings.TransparencySubtract.get -> float
+SA3D.Rendering.Structs.RenderSettings.TransparencySubtract.init -> void
+SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.Structs.WireFrameMode.None = 0 -> SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.Structs.WireFrameMode.Overlay = 1 -> SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.Structs.WireFrameMode.ReplaceLine = 2 -> SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.Structs.WireFrameMode.ReplacePoint = 3 -> SA3D.Rendering.Structs.WireFrameMode
+SA3D.Rendering.UI.Blit
+SA3D.Rendering.UI.Canvas
+SA3D.Rendering.UI.Canvas.ActiveShader.get -> SA3D.Rendering.Shaders.Shader?
+SA3D.Rendering.UI.Canvas.ActiveShader.set -> void
+SA3D.Rendering.UI.Canvas.Canvas(SA3D.Texturing.TextureSet! textures) -> void
+SA3D.Rendering.UI.Canvas.DrawRectangle(SA3D.Rendering.UI.RectangleSprite rectangle) -> void
+SA3D.Rendering.UI.Canvas.DrawSprite(SA3D.Rendering.UI.Sprite sprite) -> void
+SA3D.Rendering.UI.Canvas.DrawText(string! text, float fontSize, System.Numerics.Vector2 position) -> void
+SA3D.Rendering.UI.Canvas.DrawText(string! text, float fontSize, System.Numerics.Vector2 position, float rotation, SA3D.Modeling.Structs.Color color) -> void
+SA3D.Rendering.UI.Canvas.FontManager.get -> SA3D.Rendering.UI.FontManager?
+SA3D.Rendering.UI.Canvas.FontManager.set -> void
+SA3D.Rendering.UI.Canvas.ProjectionMatrix.get -> System.Numerics.Matrix4x4
+SA3D.Rendering.UI.Canvas.Textures.get -> SA3D.Texturing.TextureSet!
+SA3D.Rendering.UI.Canvas.UsedShader.get -> SA3D.Rendering.Shaders.Shader!
+SA3D.Rendering.UI.Debugging.DebugBackgroundGenerator
+SA3D.Rendering.UI.Debugging.DebugOverlay
+SA3D.Rendering.UI.Debugging.DebugOverlay.CaptureDelta(double delta) -> void
+SA3D.Rendering.UI.Debugging.DebugOverlay.DebugOverlay() -> void
+SA3D.Rendering.UI.Debugging.DebugOverlay.Menu.get -> SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.Debugging.DebugOverlay.Menu.set -> void
+SA3D.Rendering.UI.Debugging.DebugOverlay.RenderMode.get -> SA3D.Rendering.Structs.DebugRenderMode
+SA3D.Rendering.UI.Debugging.DebugOverlay.RenderMode.set -> void
+SA3D.Rendering.UI.Debugging.DebugOverlay.Scale -> float
+SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.Debugging.DebugUIMenu.Camera = 2 -> SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.Debugging.DebugUIMenu.Disabled = 0 -> SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.Debugging.DebugUIMenu.Help = 1 -> SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.Debugging.DebugUIMenu.RenderInfo = 3 -> SA3D.Rendering.UI.Debugging.DebugUIMenu
+SA3D.Rendering.UI.FontManager
+SA3D.Rendering.UI.FontManager.Cleanup() -> void
+SA3D.Rendering.UI.FontManager.FontManager(FontStashSharp.FontSystem! fontSystem) -> void
+SA3D.Rendering.UI.FontManager.FontSystem.get -> FontStashSharp.FontSystem!
+SA3D.Rendering.UI.RectangleSprite
+SA3D.Rendering.UI.RectangleSprite.ClipPos.get -> float?
+SA3D.Rendering.UI.RectangleSprite.ClipPos.init -> void
+SA3D.Rendering.UI.RectangleSprite.Color.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.UI.RectangleSprite.Color.init -> void
+SA3D.Rendering.UI.RectangleSprite.DestinationBlendMode.get -> SA3D.Modeling.Mesh.BlendMode
+SA3D.Rendering.UI.RectangleSprite.DestinationBlendMode.init -> void
+SA3D.Rendering.UI.RectangleSprite.Position.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.RectangleSprite.Position.init -> void
+SA3D.Rendering.UI.RectangleSprite.RectangleSprite() -> void
+SA3D.Rendering.UI.RectangleSprite.Rotation.get -> float
+SA3D.Rendering.UI.RectangleSprite.Rotation.init -> void
+SA3D.Rendering.UI.RectangleSprite.Size.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.RectangleSprite.Size.init -> void
+SA3D.Rendering.UI.RectangleSprite.SourceBlendMode.get -> SA3D.Modeling.Mesh.BlendMode
+SA3D.Rendering.UI.RectangleSprite.SourceBlendMode.init -> void
+SA3D.Rendering.UI.Sprite
+SA3D.Rendering.UI.Sprite.ClipPos.get -> float?
+SA3D.Rendering.UI.Sprite.ClipPos.init -> void
+SA3D.Rendering.UI.Sprite.Color.get -> SA3D.Modeling.Structs.Color
+SA3D.Rendering.UI.Sprite.Color.init -> void
+SA3D.Rendering.UI.Sprite.DestinationBlendMode.get -> SA3D.Modeling.Mesh.BlendMode
+SA3D.Rendering.UI.Sprite.DestinationBlendMode.init -> void
+SA3D.Rendering.UI.Sprite.Position.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.Sprite.Position.init -> void
+SA3D.Rendering.UI.Sprite.Rotation.get -> float
+SA3D.Rendering.UI.Sprite.Rotation.init -> void
+SA3D.Rendering.UI.Sprite.Size.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.Sprite.Size.init -> void
+SA3D.Rendering.UI.Sprite.SourceBlendMode.get -> SA3D.Modeling.Mesh.BlendMode
+SA3D.Rendering.UI.Sprite.SourceBlendMode.init -> void
+SA3D.Rendering.UI.Sprite.Sprite() -> void
+SA3D.Rendering.UI.Sprite.TextureIndex.get -> int
+SA3D.Rendering.UI.Sprite.TextureIndex.init -> void
+SA3D.Rendering.UI.Sprite.UVOffset.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.Sprite.UVOffset.init -> void
+SA3D.Rendering.UI.Sprite.UVScale.get -> System.Numerics.Vector2
+SA3D.Rendering.UI.Sprite.UVScale.init -> void
+static SA3D.Rendering.Shaders.FragmentShaders.GetBillBoard() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetComposite() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetMeshComposite() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetSprite() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetSurface() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetSurfaceDebug() -> string!
+static SA3D.Rendering.Shaders.FragmentShaders.GetWireframe() -> string!
+static SA3D.Rendering.Shaders.ShaderException.CreateFromLog(string! name, string! type, string! action, string! log) -> SA3D.Rendering.Shaders.ShaderException!
+static SA3D.Rendering.Shaders.ShaderIncludes.GetCommonFunctions() -> string!
+static SA3D.Rendering.Shaders.ShaderIncludes.GetGlobalInputs() -> string!
+static SA3D.Rendering.Shaders.ShaderIncludes.GetMatrices() -> string!
+static SA3D.Rendering.Shaders.ShaderIncludes.GetOIT() -> string!
+static SA3D.Rendering.Shaders.ShaderIncludes.GetSpriteInfo() -> string!
+static SA3D.Rendering.Shaders.Shaders.Billboard.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.Composite.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.MeshComposite.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.Sprite.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.Surface.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.SurfaceDebug.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.Shaders.Wireframe.get -> SA3D.Rendering.Shaders.Shader!
+static SA3D.Rendering.Shaders.VertexShaders.GetBillBoard() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetPosition() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetScreen() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetSprite() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetSurface() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetSurfaceDebug() -> string!
+static SA3D.Rendering.Shaders.VertexShaders.GetWireframe() -> string!
+static SA3D.Rendering.Structs.RenderSettings.operator !=(SA3D.Rendering.Structs.RenderSettings left, SA3D.Rendering.Structs.RenderSettings right) -> bool
+static SA3D.Rendering.Structs.RenderSettings.operator ==(SA3D.Rendering.Structs.RenderSettings left, SA3D.Rendering.Structs.RenderSettings right) -> bool
+static SA3D.Rendering.UI.Blit.Initialize() -> void
+static SA3D.Rendering.UI.Blit.Render() -> void
+static SA3D.Rendering.UI.Debugging.DebugBackgroundGenerator.GenerateTexture(int width, int height) -> SA3D.Texturing.Texture!
+virtual SA3D.Rendering.UI.Canvas.EnableDepthCheck.get -> bool
+virtual SA3D.Rendering.UI.Canvas.Initialize() -> void
