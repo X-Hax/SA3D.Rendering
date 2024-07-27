@@ -167,7 +167,7 @@ namespace SA3D.Rendering
 					API = ContextAPI.OpenGL,
 					APIVersion = new Version(4, 6),
 					Title = title,
-					Size = new(context.Viewport.Width, context.Viewport.Height),
+					ClientSize = new(context.Viewport.Width, context.Viewport.Height),
 					Flags = ContextFlags.ForwardCompatible,
 					WindowBorder = WindowBorder.Resizable,
 					Icon = icon

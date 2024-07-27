@@ -92,8 +92,7 @@ namespace SA3D.Rendering.UI.Debugging
 			{
 				FontResolutionFactor = 2,
 				KernelWidth = 2,
-				KernelHeight = 2,
-				PremultiplyAlpha = false
+				KernelHeight = 2
 			});
 
 			Assembly assembly = Assembly.GetExecutingAssembly();
