@@ -7,8 +7,8 @@ namespace SA3D.Rendering.Buffer
 {
 	internal partial class BufferManager
 	{
-		private readonly Dictionary<TextureSet, int> _textureSetUsages = new();
-		private readonly Dictionary<TextureSet, int[]> _textureHandles = new();
+		private readonly Dictionary<TextureSet, int> _textureSetUsages = [];
+		private readonly Dictionary<TextureSet, int[]> _textureHandles = [];
 
 		/// <summary>
 		/// Active texture set to be used by the material

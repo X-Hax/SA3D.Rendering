@@ -9,8 +9,8 @@ namespace SA3D.Rendering.Input
          * Access to the inputs for the graphics API, regardless of which framework is used
          */
 
-		private HashSet<InputCode> _isPressed = new();
-		private HashSet<InputCode> _wasPressed = new();
+		private HashSet<InputCode> _isPressed = [];
+		private HashSet<InputCode> _wasPressed = [];
 		private bool _lockCursor;
 
 		/// <summary>

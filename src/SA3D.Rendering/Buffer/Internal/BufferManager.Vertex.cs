@@ -17,7 +17,7 @@ namespace SA3D.Rendering.Buffer
 		/// </summary>
 		private readonly CachedVertex[] _vertices = new CachedVertex[0x10000];
 		private readonly RegionMarker<bool> _hasNormalRegions = new();
-		private readonly Dictionary<BufferMesh, BufferMeshHandle> _meshHandles = new();
+		private readonly Dictionary<BufferMesh, BufferMeshHandle> _meshHandles = [];
 
 		public void BufferMeshes(IEnumerable<BufferMesh> meshData, Matrix4x4? weightWorldMatrix, bool active)
 		{

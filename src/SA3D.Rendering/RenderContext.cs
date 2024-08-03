@@ -196,7 +196,7 @@ namespace SA3D.Rendering
 			_bufferManager = new();
 			_uiRenderer = new(_bufferManager);
 			OITBuffer = new();
-			_canvases = new();
+			_canvases = [];
 
 			Input = new();
 			Camera = new(viewport.Width / (float)viewport.Height);

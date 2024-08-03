@@ -80,7 +80,7 @@ namespace SA3D.Rendering.Shaders
 			Name = name;
 			_vertexShaderSource = CorrectString(vertexShaderSource);
 			_fragmentShaderSource = CorrectString(fragmentShaderSource);
-			_uniformLocations = new();
+			_uniformLocations = [];
 			_handle = -1;
 		}
 

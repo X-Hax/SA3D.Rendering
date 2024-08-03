@@ -49,7 +49,7 @@ namespace SA3D.Rendering.UI
 
 			public FontRenderer()
 			{
-				_textTextureHandles = new();
+				_textTextureHandles = [];
 			}
 
 			public void DeleteTextures()

@@ -9,8 +9,8 @@ namespace SA3D.Rendering.Input
          * Whatever framework is used transfers their inputs via these method calls.
          */
 
-		private readonly HashSet<InputCode> _newPressed = new();
-		private readonly HashSet<InputCode> _newReleased = new();
+		private readonly HashSet<InputCode> _newPressed = [];
+		private readonly HashSet<InputCode> _newReleased = [];
 		private bool _hadValidCursorLocationBefore;
 		private Vector2 _newCursorLocation;
 		private Vector2 _newCursorDelta;

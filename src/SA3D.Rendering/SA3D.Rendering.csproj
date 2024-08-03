@@ -3,7 +3,7 @@
 	<Import Project="../SA3D.ProjectConfigurations/NuGet.Build.props" />
 
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<RootNamespace>SA3D.Rendering</RootNamespace>
 	</PropertyGroup>
 
@@ -43,11 +43,8 @@
 	<ItemGroup>
 		<PackageReference Include="FontStashSharp" Version="1.3.7" />
 		<PackageReference Include="OpenTK" Version="4.8.2" />
-		<PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
 		<PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.4" />
 		<PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
-		<PackageReference Include="SA3D.Common" Version="1.4.7" />
-		<PackageReference Include="SA3D.Texturing" Version="1.3.7" />
-		<PackageReference Include="SA3D.Modeling" Version="1.1.5" />
+		<PackageReference Include="SA3D.Modeling" Version="1.2.0" />
 	</ItemGroup>
 </Project>
