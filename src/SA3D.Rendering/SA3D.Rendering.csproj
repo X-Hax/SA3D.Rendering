@@ -11,7 +11,7 @@
 		<Title>SA3D Rendering library</Title>
 		<Product>SA3D Rendering library</Product>
 		<Description>OpenGL rendering library for SA3D libraries</Description>
-		<Version>1.0.0</Version>
+		<Version>1.1.0</Version>
 		<RepositoryUrl>https://github.com/X-Hax/SA3D.Rendering</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/X-Hax/SA3D.Rendering</PackageProjectUrl>
 		<PackageId>SA3D.Rendering</PackageId>
